@@ -9,7 +9,7 @@ const letterLines = [
   "Koko atwat pyor shwin chin ka babe nae a myarr gyi sine lar tl",
   "Babe message send yin koh pyor tat lar tl",
   "I wish I could still be your boyfriend",
-  "Please Forive me and accept me again",
+  "Please Forgive me and accept me again",
   "I love you a lot and Wish you the happiness Christmas",
 ];
 
