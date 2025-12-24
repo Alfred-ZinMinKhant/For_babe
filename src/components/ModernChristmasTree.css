@@ -239,5 +239,47 @@
     transform: rotate(360deg);
   }
 }
-  
+
+.love-message-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  pointer-events: none;
+  animation: love-message-appear 0.5s ease-out;
+}
+
+.love-message {
+  background: rgba(255, 255, 255, 0.95);
+  color: #ED3591;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  font-size: clamp(20px, 5vw, 32px);
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(237, 53, 145, 0.3);
+  border: 3px solid #ED3591;
+  animation: love-message-pulse 2s ease-in-out infinite;
+}
+
+@keyframes love-message-appear {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes love-message-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
 

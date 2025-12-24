@@ -63,13 +63,13 @@ function ChristmasCake({ onOpen }) {
             letterSpacing: 1,
           }}
         >
-          Open your Christmas Cake!
+          Open your Christmas Gift!
         </div>
       </Html>
       {/* Cake base */}
       <mesh position={[0, -0.3, 0]} castShadow>
         <cylinderGeometry args={[1.2, 1.2, 0.6, 32]} />
-        <meshStandardMaterial color="#8b4513" />
+        <meshStandardMaterial color="#dc143c" />
       </mesh>
       {/* White icing layer */}
       <mesh position={[0, 0, 0]} castShadow>
@@ -81,23 +81,49 @@ function ChristmasCake({ onOpen }) {
         <torusGeometry args={[1.25, 0.05, 8, 32]} />
         <meshStandardMaterial color="#fff" />
       </mesh>
-      {/* Holly decorations */}
-      <HollyLeaf position={[0.8, 0.15, 0.8]} rotation={[0, Math.PI / 4, 0]} />
-      <HollyLeaf position={[-0.8, 0.15, -0.8]} rotation={[0, -Math.PI / 4, 0]} />
-      <HollyLeaf position={[0, 0.15, 1]} rotation={[0, 0, 0]} />
-      <HollyLeaf position={[1, 0.15, 0]} rotation={[0, Math.PI / 2, 0]} />
-      {/* Berries */}
-      <Berry position={[0.85, 0.15, 0.85]} />
-      <Berry position={[-0.85, 0.15, -0.85]} />
-      <Berry position={[0, 0.15, 1.05]} />
-      <Berry position={[1.05, 0.15, 0]} />
+    
+      {/* Ribbon around the middle */}
+      <mesh position={[0, 0.08, 0]}>
+        <torusGeometry args={[1.28, 0.08, 8, 32]} />
+        <meshStandardMaterial color="#ffd700" />
+      </mesh>
+      {/* Ribbon bow on top */}
+      <group position={[0, 0.35, 0]}>
+        {/* Bow center knot */}
+        <mesh>
+          <sphereGeometry args={[0.12, 16, 16]} />
+          <meshStandardMaterial color="#ffd700" />
+        </mesh>
+        {/* Bow loops */}
+        <mesh position={[0.15, 0.08, 0]} rotation={[0, 0, Math.PI / 4]}>
+          <torusGeometry args={[0.15, 0.06, 8, 16]} />
+          <meshStandardMaterial color="#ffd700" />
+        </mesh>
+        <mesh position={[-0.15, 0.08, 0]} rotation={[0, 0, -Math.PI / 4]}>
+          <torusGeometry args={[0.15, 0.06, 8, 16]} />
+          <meshStandardMaterial color="#ffd700" />
+        </mesh>
+        {/* Bow tails */}
+        <mesh position={[0, -0.08, 0]}>
+          <boxGeometry args={[0.04, 0.16, 0.02]} />
+          <meshStandardMaterial color="#ffd700" />
+        </mesh>
+        <mesh position={[0.08, -0.08, 0]}>
+          <boxGeometry args={[0.04, 0.16, 0.02]} />
+          <meshStandardMaterial color="#ffd700" />
+        </mesh>
+        <mesh position={[-0.08, -0.08, 0]}>
+          <boxGeometry args={[0.04, 0.16, 0.02]} />
+          <meshStandardMaterial color="#ffd700" />
+        </mesh>
+      </group>
       {/* Merry Christmas message in icing */}
-      <Html center position={[0, 0.25, 0]} style={{ pointerEvents: "none" }}>
+      <Html center position={[0, 0.25, -5]} style={{ pointerEvents: "none", width: "200px" }}>
         <div
           style={{
-            color: "#8b0000",
+            color: "#ff0101ff",
             fontWeight: 700,
-            fontSize: 18,
+            fontSize: 25,
             textShadow: "0 1px 4px #fff",
             fontFamily: "serif",
             textAlign: "center",
@@ -114,7 +140,6 @@ import "../styles/vignette.css";
 import BabeVideo from "../assets/Babe.mp4";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Html } from "@react-three/drei";
-import FindTheTree from "./FindTheTree";
 
 function Cake3D({ onBlow }) {
   // Sprinkles helper
@@ -351,8 +376,7 @@ const GiftUnwrap = ({ onComplete }) => {
   const [showGiftBox, setShowGiftBox] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
-  const [showFindTree, setShowFindTree] = useState(false);
-  const [showFinalContinue, setShowFinalContinue] = useState(false);
+  const [completed, setCompleted] = useState(false);
   return (
     <>
       <style>{`
@@ -563,7 +587,7 @@ const GiftUnwrap = ({ onComplete }) => {
               }}
               onClick={() => {
                 setShowVideo(false);
-                setShowFindTree(true);
+                onComplete();
               }}
             >
               Find the Tree
@@ -571,46 +595,6 @@ const GiftUnwrap = ({ onComplete }) => {
           </div>
         )}
       </div>
-      {showFindTree && <FindTheTree onComplete={() => { setShowFindTree(false); setShowFinalContinue(true); }} />}
-      {showFinalContinue && (
-        <div
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            width: "100vw",
-            height: "100vh",
-            background: "#181824",
-            zIndex: 30,
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <button
-            className="gift-btn"
-            style={{
-              padding: "1.1rem 2.8rem",
-              fontSize: "1.3rem",
-              background: "#fc3d3d",
-              color: "#fff6e9",
-              border: "none",
-              borderRadius: "2rem",
-              boxShadow: "0 4px 16px #e83e3e44",
-              cursor: "pointer",
-              fontFamily: "sans-serif",
-              fontWeight: 700,
-              transition: "background 0.2s",
-              maxWidth: "90vw",
-              whiteSpace: "nowrap",
-              letterSpacing: 1,
-            }}
-            onClick={onComplete}
-          >
-            Continue
-          </button>
-        </div>
-      )}
     </>
   );
 };

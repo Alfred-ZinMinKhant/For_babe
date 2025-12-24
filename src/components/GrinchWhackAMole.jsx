@@ -4,7 +4,7 @@ import GrinchImage from '../assets/grinch.png';
 
 const GrinchWhackAMole = ({ onComplete }) => {
   const [score, setScore] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(30);
+  const [timeLeft, setTimeLeft] = useState(25);
   const [grinchPositions, setGrinchPositions] = useState(Array(9).fill(false));
   const [gameActive, setGameActive] = useState(true);
 

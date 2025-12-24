@@ -159,14 +159,225 @@
   cursor: pointer;
 }
 
-/* More decorations */
+/* More decorations to clutter */
 .ornament1 { top: 22%; left: 55%; font-size: 1.5rem; }
 .ornament2 { top: 52%; right: 40%; font-size: 1.5rem; }
 .ornament3 { bottom: 55%; left: 50%; font-size: 1.5rem; }
+.ornament4 { top: 18%; left: 25%; font-size: 1.3rem; }
+.ornament5 { bottom: 25%; right: 60%; font-size: 1.4rem; }
+.ornament6 { top: 45%; left: 75%; font-size: 1.2rem; }
 .snowman1 { top: 75%; left: 40%; font-size: 2rem; }
 .snowman2 { bottom: 60%; right: 50%; font-size: 2rem; }
+.snowman3 { top: 55%; left: 8%; font-size: 1.8rem; }
 .candle1 { top: 28%; left: 75%; font-size: 1.8rem; }
 .candle2 { bottom: 70%; left: 55%; font-size: 1.8rem; }
+.candle3 { top: 60%; right: 15%; font-size: 1.6rem; }
+
+/* Additional decorations */
+.mistletoe1 { top: 5%; right: 40%; font-size: 1.5rem; }
+.mistletoe2 { bottom: 8%; left: 35%; font-size: 1.4rem; }
+.sleigh1 { top: 70%; right: 5%; font-size: 2.2rem; }
+.elf1 { top: 32%; left: 45%; font-size: 1.8rem; }
+.elf2 { bottom: 35%; right: 25%; font-size: 1.7rem; }
+.stockings1 { bottom: 5%; left: 20%; font-size: 1.6rem; }
+.stockings2 { bottom: 5%; right: 20%; font-size: 1.6rem; }
+.fireplace1 { bottom: 10%; left: 45%; font-size: 2rem; }
+.cookies1 { top: 38%; left: 22%; font-size: 1.3rem; }
+.cookies2 { top: 48%; right: 35%; font-size: 1.2rem; }
+.cookies3 { bottom: 42%; left: 65%; font-size: 1.1rem; }
+.milk1 { top: 42%; left: 18%; font-size: 1.4rem; }
+.milk2 { bottom: 38%; right: 30%; font-size: 1.3rem; }
+.lights3 { top: 15%; left: 50%; font-size: 1.5rem; }
+.lights4 { bottom: 18%; left: 40%; font-size: 1.6rem; }
+.bells3 { top: 50%; left: 5%; font-size: 1.4rem; }
+.bells4 { bottom: 50%; right: 5%; font-size: 1.3rem; }
+.stars3 { top: 20%; right: 25%; font-size: 1.2rem; }
+.stars4 { bottom: 30%; left: 55%; font-size: 1.1rem; }
+.stars5 { top: 65%; left: 50%; font-size: 1.3rem; }
+.bauble1 { top: 25%; left: 30%; font-size: 1.2rem; }
+.bauble2 { bottom: 45%; right: 45%; font-size: 1.1rem; }
+.gingerbread1 { top: 35%; right: 50%; font-size: 1.3rem; }
+.gingerbread2 { bottom: 55%; left: 30%; font-size: 1.2rem; }
+.present1 { top: 40%; left: 40%; font-size: 1.4rem; }
+.present2 { bottom: 40%; right: 35%; font-size: 1.3rem; }
+.snowflake1 { top: 30%; right: 20%; font-size: 1.2rem; }
+.snowflake2 { bottom: 50%; left: 40%; font-size: 1.1rem; }
+.wreath2 { top: 10%; right: 50%; font-size: 1.4rem; }
+.wreath3 { bottom: 15%; left: 60%; font-size: 1.3rem; }
+.candy-cane1 { top: 15%; left: 15%; font-size: 1.2rem; }
+.candy-cane2 { top: 45%; right: 10%; font-size: 1.1rem; }
+.candy-cane3 { bottom: 30%; left: 10%; font-size: 1.3rem; }
+.nutcracker1 { top: 50%; left: 25%; font-size: 1.8rem; }
+.nutcracker2 { bottom: 25%; right: 15%; font-size: 1.7rem; }
+.angel1 { top: 8%; right: 15%; font-size: 1.6rem; }
+.angel2 { bottom: 8%; left: 15%; font-size: 1.5rem; }
+.dove1 { top: 25%; right: 5%; font-size: 1.3rem; }
+.dove2 { bottom: 35%; left: 5%; font-size: 1.2rem; }
+.holly1 { top: 40%; left: 60%; font-size: 1.1rem; }
+.holly2 { bottom: 45%; right: 55%; font-size: 1.2rem; }
+.ribbon1 { top: 30%; left: 35%; font-size: 1.1rem; }
+.ribbon2 { top: 55%; right: 45%; font-size: 1.2rem; }
+.ribbon3 { bottom: 20%; left: 25%; font-size: 1.0rem; }
+.teddy1 { top: 60%; left: 15%; font-size: 1.4rem; }
+.teddy2 { bottom: 40%; right: 25%; font-size: 1.3rem; }
+.drum1 { top: 35%; right: 30%; font-size: 1.2rem; }
+.drum2 { bottom: 50%; left: 45%; font-size: 1.1rem; }
+.horn1 { top: 20%; left: 50%; font-size: 1.3rem; }
+.horn2 { bottom: 55%; right: 40%; font-size: 1.2rem; }
+.person5 { top: 45%; left: 12%; font-size: 1.9rem; }
+.person6 { bottom: 28%; right: 8%; font-size: 1.8rem; }
+.person7 { top: 55%; right: 22%; font-size: 1.7rem; }
+.polar-bear1 { top: 70%; left: 25%; font-size: 1.6rem; }
+.polar-bear2 { bottom: 65%; right: 35%; font-size: 1.5rem; }
+.fox1 { top: 38%; left: 70%; font-size: 1.4rem; }
+.fox2 { bottom: 48%; left: 75%; font-size: 1.3rem; }
+.pie1 { top: 42%; left: 8%; font-size: 1.2rem; }
+.pie2 { top: 52%; right: 28%; font-size: 1.1rem; }
+.pie3 { bottom: 38%; left: 18%; font-size: 1.3rem; }
+.clock1 { top: 28%; left: 42%; font-size: 1.1rem; }
+.clock2 { bottom: 42%; right: 48%; font-size: 1.2rem; }
+.book1 { top: 48%; left: 32%; font-size: 1.0rem; }
+.book2 { bottom: 52%; right: 18%; font-size: 1.1rem; }
+.train1 { top: 62%; left: 55%; font-size: 1.4rem; }
+.train2 { bottom: 58%; right: 55%; font-size: 1.3rem; }
+.balloon1 { top: 12%; left: 35%; font-size: 1.2rem; }
+.balloon2 { top: 18%; right: 35%; font-size: 1.1rem; }
+.balloon3 { bottom: 12%; left: 35%; font-size: 1.3rem; }
+.sleigh2 { top: 68%; right: 12%; font-size: 2.0rem; }
+.sleigh3 { bottom: 62%; left: 28%; font-size: 1.9rem; }
+.snow-globe1 { top: 22%; left: 48%; font-size: 1.1rem; }
+.snow-globe2 { bottom: 32%; right: 52%; font-size: 1.2rem; }
+.jingle-bell1 { top: 38%; right: 8%; font-size: 1.0rem; }
+.jingle-bell2 { top: 58%; left: 48%; font-size: 1.1rem; }
+.jingle-bell3 { bottom: 48%; left: 52%; font-size: 1.2rem; }
+.candy1 { top: 32%; left: 28%; font-size: 1.0rem; }
+.candy2 { top: 48%; right: 38%; font-size: 1.1rem; }
+.candy3 { bottom: 42%; left: 38%; font-size: 1.2rem; }
+.candy4 { bottom: 52%; right: 28%; font-size: 1.0rem; }
+.wreath4 { top: 6%; left: 45%; font-size: 1.2rem; }
+.wreath5 { top: 14%; right: 55%; font-size: 1.1rem; }
+.wreath6 { bottom: 18%; right: 60%; font-size: 1.3rem; }
+.lights5 { top: 16%; left: 55%; font-size: 1.4rem; }
+.lights6 { top: 22%; right: 42%; font-size: 1.3rem; }
+.lights7 { bottom: 16%; left: 48%; font-size: 1.2rem; }
+.bells5 { top: 52%; left: 8%; font-size: 1.1rem; }
+.bells6 { top: 58%; right: 12%; font-size: 1.0rem; }
+.bells7 { bottom: 48%; left: 8%; font-size: 1.2rem; }
+.stars6 { top: 26%; left: 58%; font-size: 1.1rem; }
+.stars7 { top: 32%; right: 48%; font-size: 1.2rem; }
+.stars8 { bottom: 28%; left: 52%; font-size: 1.0rem; }
+.ornament7 { top: 24%; left: 38%; font-size: 1.1rem; }
+.ornament8 { top: 28%; right: 38%; font-size: 1.2rem; }
+.ornament9 { bottom: 24%; left: 42%; font-size: 1.0rem; }
+.ornament10 { bottom: 28%; right: 42%; font-size: 1.1rem; }
+.snowman4 { top: 72%; right: 45%; font-size: 1.9rem; }
+.snowman5 { bottom: 68%; left: 48%; font-size: 1.8rem; }
+.snowman6 { top: 76%; left: 52%; font-size: 1.7rem; }
+.candle4 { top: 34%; left: 78%; font-size: 1.7rem; }
+.candle5 { bottom: 72%; left: 58%; font-size: 1.6rem; }
+.candle6 { top: 64%; right: 48%; font-size: 1.8rem; }
+.person8 { top: 42%; left: 18%; font-size: 1.9rem; }
+.person9 { top: 48%; right: 25%; font-size: 1.8rem; }
+.person10 { bottom: 32%; left: 22%; font-size: 1.7rem; }
+.person11 { bottom: 36%; right: 28%; font-size: 1.9rem; }
+.person12 { top: 52%; left: 38%; font-size: 1.8rem; }
+.deer1 { top: 66%; left: 8%; font-size: 1.6rem; }
+.deer2 { top: 68%; right: 18%; font-size: 1.5rem; }
+.deer3 { bottom: 64%; left: 12%; font-size: 1.7rem; }
+.owl1 { top: 18%; left: 65%; font-size: 1.4rem; }
+.owl2 { bottom: 22%; right: 65%; font-size: 1.3rem; }
+.rabbit1 { top: 74%; left: 35%; font-size: 1.3rem; }
+.rabbit2 { bottom: 66%; right: 42%; font-size: 1.2rem; }
+.squirrel1 { top: 36%; left: 72%; font-size: 1.1rem; }
+.squirrel2 { bottom: 44%; left: 68%; font-size: 1.2rem; }
+.turkey1 { top: 44%; left: 2%; font-size: 1.5rem; }
+.turkey2 { bottom: 46%; right: 2%; font-size: 1.4rem; }
+.ham1 { top: 38%; right: 2%; font-size: 1.3rem; }
+.ham2 { bottom: 42%; left: 2%; font-size: 1.2rem; }
+.fruitcake1 { top: 46%; left: 55%; font-size: 1.1rem; }
+.fruitcake2 { bottom: 48%; right: 55%; font-size: 1.2rem; }
+.fireplace2 { top: 78%; left: 42%; font-size: 2.1rem; }
+.fireplace3 { bottom: 72%; right: 38%; font-size: 2.0rem; }
+.stockings3 { top: 82%; left: 18%; font-size: 1.6rem; }
+.stockings4 { top: 82%; right: 18%; font-size: 1.5rem; }
+.stockings5 { bottom: 78%; left: 25%; font-size: 1.7rem; }
+.gift5 { top: 36%; left: 45%; font-size: 1.4rem; }
+.gift6 { top: 40%; right: 35%; font-size: 1.3rem; }
+.gift7 { bottom: 34%; left: 35%; font-size: 1.5rem; }
+.gift8 { bottom: 38%; right: 45%; font-size: 1.2rem; }
+.gift9 { top: 44%; left: 50%; font-size: 1.1rem; }
+.gift10 { bottom: 44%; left: 50%; font-size: 1.3rem; }
+.cookie3 { top: 40%; left: 28%; font-size: 1.1rem; }
+.cookie4 { top: 46%; right: 32%; font-size: 1.2rem; }
+.cookie5 { bottom: 40%; left: 32%; font-size: 1.0rem; }
+.cookie6 { bottom: 46%; right: 38%; font-size: 1.1rem; }
+.candy5 { top: 34%; left: 22%; font-size: 1.0rem; }
+.candy6 { top: 50%; right: 42%; font-size: 1.1rem; }
+.candy7 { bottom: 36%; left: 28%; font-size: 1.2rem; }
+.candy8 { bottom: 50%; right: 32%; font-size: 1.0rem; }
+.tree-decoration1 { top: 26%; left: 45%; font-size: 1.1rem; }
+.tree-decoration2 { top: 30%; right: 55%; font-size: 1.0rem; }
+.tree-decoration3 { bottom: 26%; left: 55%; font-size: 1.2rem; }
+.tree-decoration4 { bottom: 30%; right: 45%; font-size: 1.1rem; }
+.tree-decoration5 { top: 38%; left: 58%; font-size: 1.0rem; }
+.snowflake3 { top: 12%; left: 25%; font-size: 1.2rem; }
+.snowflake4 { top: 16%; right: 28%; font-size: 1.1rem; }
+.snowflake5 { top: 20%; left: 32%; font-size: 1.0rem; }
+.snowflake6 { bottom: 14%; right: 22%; font-size: 1.2rem; }
+.snowflake7 { bottom: 18%; left: 28%; font-size: 1.1rem; }
+.snowflake8 { top: 56%; left: 62%; font-size: 1.0rem; }
+.snowflake9 { bottom: 54%; right: 58%; font-size: 1.1rem; }
+.snowflake10 { top: 60%; right: 52%; font-size: 1.2rem; }
+.green-wreath1 { top: 8%; left: 38%; font-size: 1.3rem; }
+.green-wreath2 { top: 12%; right: 48%; font-size: 1.2rem; }
+.green-wreath3 { bottom: 12%; left: 42%; font-size: 1.4rem; }
+.green-wreath4 { bottom: 16%; right: 52%; font-size: 1.1rem; }
+.green-wreath5 { top: 18%; left: 52%; font-size: 1.3rem; }
+.green-holly1 { top: 22%; left: 42%; font-size: 1.1rem; }
+.green-holly2 { top: 26%; right: 38%; font-size: 1.2rem; }
+.green-holly3 { bottom: 22%; left: 48%; font-size: 1.0rem; }
+.green-holly4 { bottom: 26%; right: 42%; font-size: 1.3rem; }
+.green-mistletoe1 { top: 14%; left: 48%; font-size: 1.1rem; }
+.green-mistletoe2 { top: 16%; right: 52%; font-size: 1.2rem; }
+.green-mistletoe3 { bottom: 18%; left: 38%; font-size: 1.0rem; }
+.green-ornament1 { top: 24%; left: 48%; font-size: 1.1rem; }
+.green-ornament2 { top: 28%; right: 44%; font-size: 1.0rem; }
+.green-ornament3 { bottom: 24%; left: 44%; font-size: 1.2rem; }
+.green-ornament4 { bottom: 28%; right: 48%; font-size: 1.1rem; }
+.green-ornament5 { top: 32%; left: 52%; font-size: 1.0rem; }
+.green-lights1 { top: 18%; left: 42%; font-size: 1.2rem; }
+.green-lights2 { top: 20%; right: 46%; font-size: 1.1rem; }
+.green-lights3 { bottom: 20%; left: 46%; font-size: 1.3rem; }
+.green-lights4 { bottom: 24%; right: 40%; font-size: 1.0rem; }
+.green-candy1 { top: 30%; left: 38%; font-size: 1.1rem; }
+.green-candy2 { top: 34%; right: 42%; font-size: 1.2rem; }
+.green-candy3 { bottom: 30%; left: 52%; font-size: 1.0rem; }
+.green-tree1 { top: 10%; left: 35%; font-size: 1.1rem; }
+.green-tree2 { top: 14%; right: 35%; font-size: 1.0rem; }
+.green-tree3 { top: 18%; left: 40%; font-size: 1.2rem; }
+.green-tree4 { bottom: 14%; right: 40%; font-size: 1.1rem; }
+.green-tree5 { bottom: 18%; left: 45%; font-size: 1.0rem; }
+.green-tree6 { top: 22%; right: 50%; font-size: 1.1rem; }
+.green-tree7 { bottom: 22%; left: 50%; font-size: 1.2rem; }
+.green-tree8 { top: 26%; left: 55%; font-size: 1.0rem; }
+.green-pine1 { top: 6%; left: 30%; font-size: 1.4rem; }
+.green-pine2 { top: 10%; right: 30%; font-size: 1.3rem; }
+.green-pine3 { bottom: 10%; left: 35%; font-size: 1.5rem; }
+.green-pine4 { bottom: 14%; right: 35%; font-size: 1.2rem; }
+.green-pine5 { top: 16%; left: 60%; font-size: 1.1rem; }
+.green-evergreen1 { top: 8%; right: 25%; font-size: 1.3rem; }
+.green-evergreen2 { bottom: 8%; left: 25%; font-size: 1.4rem; }
+.green-evergreen3 { top: 20%; right: 60%; font-size: 1.2rem; }
+.green-leaf1 { top: 12%; left: 55%; font-size: 1.0rem; }
+.green-leaf2 { top: 16%; right: 45%; font-size: 1.1rem; }
+.green-leaf3 { bottom: 16%; left: 40%; font-size: 1.2rem; }
+.green-leaf4 { bottom: 20%; right: 50%; font-size: 1.0rem; }
+.green-leaf5 { top: 24%; left: 35%; font-size: 1.1rem; }
+.green-circle1 { top: 28%; right: 35%; font-size: 1.0rem; }
+.green-circle2 { bottom: 26%; left: 55%; font-size: 1.1rem; }
+.green-circle3 { top: 30%; left: 45%; font-size: 1.2rem; }
+.green-circle4 { bottom: 28%; right: 55%; font-size: 1.0rem; }
+.green-circle5 { top: 32%; right: 25%; font-size: 1.1rem; }
 
 .celebration {
   position: absolute;
@@ -175,18 +386,111 @@
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 10;
+  animation: celebration-pop 0.8s ease-out;
 }
 
-.sparkles {
-  font-size: 3rem;
+.celebration-bg {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,215,0,0.8) 50%, rgba(255,0,0,0.6) 100%);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255,215,0,0.8), 0 0 60px rgba(255,0,0,0.4);
+  animation: celebration-glow 2s ease-in-out infinite alternate;
+}
+
+.celebration-content {
+  position: relative;
+  z-index: 11;
+  padding: 2rem;
+  background: rgba(255,255,255,0.95);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.celebration-sparkles {
+  font-size: 2.5rem;
   margin-bottom: 1rem;
-  animation: sparkle 1s ease-in-out infinite;
+  animation: celebration-sparkle 1.5s ease-in-out infinite;
 }
 
-.celebration p {
+.celebration-tree {
+  font-size: 4rem;
+  margin: 1rem 0;
+  animation: celebration-bounce 2s ease-in-out infinite;
+}
+
+.celebration-title {
+  font-size: 2.5rem;
+  color: #ff0000;
+  margin: 1rem 0;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  animation: celebration-text 1s ease-out;
+}
+
+.celebration-message {
+  font-size: 1.8rem;
+  color: #ff6b6b;
+  margin: 1rem 0;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  animation: celebration-text 1s ease-out 0.3s both;
+}
+
+.celebration-hearts {
+  font-size: 2rem;
+  margin: 1rem 0;
+  animation: celebration-hearts-float 3s ease-in-out infinite;
+}
+
+.celebration-snow {
   font-size: 1.5rem;
-  color: #ffe066;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  margin-top: 1rem;
+  animation: celebration-snow-fall 4s ease-in-out infinite;
+}
+
+@keyframes celebration-pop {
+  0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0; }
+  50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.8; }
+  100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+}
+
+@keyframes celebration-glow {
+  from { box-shadow: 0 0 30px rgba(255,215,0,0.8), 0 0 60px rgba(255,0,0,0.4); }
+  to { box-shadow: 0 0 50px rgba(255,215,0,1), 0 0 80px rgba(255,0,0,0.6); }
+}
+
+@keyframes celebration-sparkle {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(5deg) scale(1.1); }
+  50% { transform: rotate(-5deg) scale(1.2); }
+  75% { transform: rotate(3deg) scale(1.1); }
+}
+
+@keyframes celebration-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes celebration-text {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes celebration-hearts-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-5px) rotate(2deg); }
+  50% { transform: translateY(-10px) rotate(-2deg); }
+  75% { transform: translateY(-5px) rotate(1deg); }
+}
+
+@keyframes celebration-snow-fall {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  33% { transform: translateY(5px) rotate(120deg); }
+  66% { transform: translateY(-5px) rotate(240deg); }
 }
 
 @keyframes pulse {

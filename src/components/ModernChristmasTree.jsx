@@ -7,6 +7,8 @@ import LoveLetter from './LoveLetter';
 import VirtualGiftUnwrapping from './VirtualGiftUnwrapping';
 import GrinchWhackAMole from './GrinchWhackAMole';
 import GrinchStealsTree from './GrinchStealsTree';
+import FindTheTree from './FindTheTree';
+import LetterScene from './LetterScene';
 
 // Simple snowflake generator
 const SNOWFLAKE_COUNT = 40;
@@ -48,6 +50,10 @@ function ModernChristmasTree() {
 	const [showGrinchSteals1, setShowGrinchSteals1] = useState(false);
 	const [showGrinchSteals2, setShowGrinchSteals2] = useState(false);
 	const [showGrinchSteals3, setShowGrinchSteals3] = useState(false);
+	const [showFindTree, setShowFindTree] = useState(false);
+	const [showLetterScene, setShowLetterScene] = useState(false);
+	const [gamesStarted, setGamesStarted] = useState(false);
+	const [showLoveMessage, setShowLoveMessage] = useState(false);
 
 	useEffect(() => {
 		const t = setTimeout(() => setShowTree(false), 3000);
@@ -76,7 +82,12 @@ function ModernChristmasTree() {
 			enableBackground="new 0 -40 189.9 388.2"
 			xmlSpace="preserve"
 			className="modern-christmas-tree"
-			onClick={() => setShowTree(false)}
+			onClick={() => {
+				setShowLoveMessage(true);
+				setTimeout(() => {
+					setShowLoveMessage(false);
+				}, 2000);
+			}}
 		>
 <path fill="#754C24" d="M120.3,348.2H69.7C84.3,343,85.3,326,85.3,326v-48.8h0.3l5.2-0.1L95,277h0.2l4,0.1h1.3l4.2,0.1V326
 	C104.6,326,105.6,343,120.3,348.2z"/>
@@ -2108,10 +2119,15 @@ function ModernChristmasTree() {
 	</text>
 </svg>
 		)}
+		{showLoveMessage && (
+			<div className="love-message-overlay">
+				<div className="love-message">I love you so much babe ❤️</div>
+			</div>
+		)}
 	</div>
-	<div className={`stolen-overlay ${!showTree ? 'visible' : ''}`} role="status">
+	<div className={`stolen-overlay ${!showTree && !gamesStarted ? 'visible' : ''}`} role="status">
 		<div className="overlay-message">Whoops!!!! The Tree was stolen!</div>
-		<button className="find-tree-btn" onClick={() => setShowWhyGame(true)}>Find the Tree?</button>
+		<button className="find-tree-btn" onClick={() => { setGamesStarted(true); setShowWhyGame(true); }}>Find the Tree?</button>
 	</div>
 	{showWhyGame && <WhyDateGame onComplete={() => { setShowWhyGame(false); setShowGrinchSteals1(true); }} />}
 	{showGrinchSteals1 && <GrinchStealsTree onComplete={() => { setShowGrinchSteals1(false); setShowGame(true); }} />}
@@ -2120,7 +2136,9 @@ function ModernChristmasTree() {
 	{showGrinchGame && <GrinchWhackAMole onComplete={() => { setShowGrinchGame(false); setShowGrinchSteals3(true); }} />}
 	{showGrinchSteals3 && <GrinchStealsTree onComplete={() => { setShowGrinchSteals3(false); setShowGiftGame(true); }} />}
 	{/* {showLoveLetter && <LoveLetter onShowLetter={() => { setShowLoveLetter(false); setShowGiftGame(true); }} />} */}
-	{showGiftGame && <VirtualGiftUnwrapping onComplete={() => setShowGiftGame(false)} />}
+	{showGiftGame && <VirtualGiftUnwrapping onComplete={() => { setShowGiftGame(false); setShowFindTree(true); }} />}
+	{showFindTree && <FindTheTree onComplete={() => { setShowFindTree(false); setShowLetterScene(true); }} />}
+	{showLetterScene && <LetterScene onComplete={() => { setShowLetterScene(false); setShowTree(true); }} />}
 	</div>
 	);
 }
