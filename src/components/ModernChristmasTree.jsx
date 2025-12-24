@@ -2134,8 +2134,8 @@ function ModernChristmasTree() {
 	{showGame && <CatchTheHeartsGame onWin={() => { setShowGame(false); setShowGrinchSteals2(true); }} />}
 	{showGrinchSteals2 && <GrinchStealsTree onComplete={() => { setShowGrinchSteals2(false); setShowGrinchGame(true); }} />}
 	{showGrinchGame && <GrinchWhackAMole onComplete={() => { setShowGrinchGame(false); setShowGrinchSteals3(true); }} />}
-	{showGrinchSteals3 && <GrinchStealsTree onComplete={() => { setShowGrinchSteals3(false); setShowGiftGame(true); }} />}
-	{/* {showLoveLetter && <LoveLetter onShowLetter={() => { setShowLoveLetter(false); setShowGiftGame(true); }} />} */}
+	{showGrinchSteals3 && <GrinchStealsTree onComplete={() => { setShowGrinchSteals3(false); setShowLoveLetter(true); }} />}
+	{showLoveLetter && <LoveLetter onShowLetter={() => { setShowLoveLetter(false); setShowGiftGame(true); }} />}
 	{showGiftGame && <VirtualGiftUnwrapping onComplete={() => { setShowGiftGame(false); setShowFindTree(true); }} />}
 	{showFindTree && <FindTheTree onComplete={() => { setShowFindTree(false); setShowLetterScene(true); }} />}
 	{showLetterScene && <LetterScene onComplete={() => { setShowLetterScene(false); setShowTree(true); }} />}
