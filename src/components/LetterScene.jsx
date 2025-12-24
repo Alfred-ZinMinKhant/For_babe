@@ -8,6 +8,8 @@ const letterLines = [
   "Babe photo lay tway send tar tway koh myaw lint mi nay tl",
   "Koko atwat pyor shwin chin ka babe nae a myarr gyi sine lar tl",
   "Babe message send yin koh pyor tat lar tl",
+  "I wish I could still be your boyfriend",
+  "Please Forive me and accept me again",
   "I love you a lot and Wish you the happiness Christmas",
 ];
 
