@@ -1,0 +1,9 @@
+.parallax-bg {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  z-index: -1;
+  background: linear-gradient(120deg, #ffe6f0 0%, #e0f7fa 100%);
+  opacity: 0.7;
+  transition: transform 0.2s ease-out;
+  /* TODO: Add sparkles, glow, or subtle animated elements */
+}

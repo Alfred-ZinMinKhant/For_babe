@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  background: #fff;
+  /* TODO: Add starry/particle background, heart cursor */
+}
+
+h1, h2 {
+  font-family: 'Pacifico', cursive;
+  /* TODO: Replace with Google Fonts for handwritten style */
+}

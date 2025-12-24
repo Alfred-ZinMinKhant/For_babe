@@ -1,0 +1,35 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  position: relative;
+}
+.timeline-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding: 1.5rem 2rem;
+  position: relative;
+  transition: transform 0.4s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.3s;
+  cursor: pointer;
+}
+.timeline-card:hover {
+  transform: scale(1.04) rotate(-1deg);
+  box-shadow: 0 8px 32px rgba(233,30,99,0.12);
+}
+.timeline-date {
+  font-size: 0.9rem;
+  color: #e91e63;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 0.5rem;
+}
+.timeline-content h3 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+.timeline-content p {
+  margin: 0;
+  color: #666;
+}

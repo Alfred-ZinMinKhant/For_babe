@@ -1,0 +1,228 @@
+.find-tree-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  z-index: 25;
+  text-align: center;
+}
+
+.find-tree-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ff6b6b;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  animation: pulse 2s infinite;
+}
+
+.hints {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ffe066;
+  font-weight: bold;
+}
+
+.christmas-scene {
+  position: relative;
+  width: 90vw;
+  max-width: 800px;
+  height: 60vh;
+  min-height: 400px;
+  background: linear-gradient(to bottom, #87ceeb 0%, #fff 50%, #f0f8ff 100%);
+  border: 5px solid #8b4513;
+  border-radius: 15px;
+  cursor: crosshair;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.scene-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="%23fff" opacity="0.3"/><circle cx="20" cy="30" r="1.5" fill="%23fff" opacity="0.4"/><circle cx="80" cy="20" r="1" fill="%23fff" opacity="0.5"/><circle cx="30" cy="80" r="1.5" fill="%23fff" opacity="0.3"/><circle cx="70" cy="70" r="1" fill="%23fff" opacity="0.4"/></svg>') repeat;
+}
+
+.snow-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.snowflake {
+  position: absolute;
+  animation: snowfall 10s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes snowfall {
+  0% { transform: translateY(-10px); }
+  100% { transform: translateY(100vh); }
+}
+
+.scene-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+}
+
+/* Houses */
+.house {
+  position: absolute;
+  font-size: 3rem;
+}
+
+.house1 { top: 10%; left: 5%; }
+.house2 { top: 15%; right: 10%; }
+.house3 { bottom: 20%; left: 15%; }
+
+/* People */
+.person {
+  position: absolute;
+  font-size: 2.5rem;
+}
+
+.person1 { top: 20%; left: 20%; }
+.person2 { top: 30%; right: 20%; }
+.person3 { bottom: 30%; left: 30%; }
+.person4 { top: 40%; left: 50%; }
+
+/* Decorations */
+.decoration {
+  position: absolute;
+  font-size: 2rem;
+}
+
+.wreath1 { top: 5%; left: 40%; }
+.lights1 { top: 8%; right: 5%; }
+.lights2 { bottom: 10%; left: 60%; }
+.bell1 { top: 25%; left: 10%; }
+.bell2 { bottom: 15%; right: 15%; }
+.star1 { top: 12%; left: 70%; }
+.star2 { bottom: 25%; left: 45%; }
+
+/* Gifts */
+.gift {
+  position: absolute;
+  font-size: 2rem;
+}
+
+.gift1 { top: 35%; left: 5%; }
+.gift2 { top: 50%; right: 5%; }
+.gift3 { bottom: 35%; left: 25%; }
+.gift4 { top: 60%; left: 35%; }
+
+/* Food */
+.food {
+  position: absolute;
+  font-size: 1.8rem;
+}
+
+.cookie1 { top: 45%; left: 15%; }
+.cookie2 { bottom: 40%; right: 25%; }
+.candy1 { top: 55%; left: 60%; }
+.candy2 { bottom: 45%; left: 70%; }
+
+/* Animals */
+.animal {
+  position: absolute;
+  font-size: 2.2rem;
+}
+
+.reindeer1 { top: 65%; left: 10%; }
+.reindeer2 { bottom: 50%; right: 30%; }
+.penguin1 { top: 70%; right: 10%; }
+
+/* The hidden Christmas Tree - positioned somewhere in the middle */
+.hidden-tree {
+  position: absolute;
+  top: 35%;
+  left: 65%;
+  font-size: 3rem;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* More decorations */
+.ornament1 { top: 22%; left: 55%; font-size: 1.5rem; }
+.ornament2 { top: 52%; right: 40%; font-size: 1.5rem; }
+.ornament3 { bottom: 55%; left: 50%; font-size: 1.5rem; }
+.snowman1 { top: 75%; left: 40%; font-size: 2rem; }
+.snowman2 { bottom: 60%; right: 50%; font-size: 2rem; }
+.candle1 { top: 28%; left: 75%; font-size: 1.8rem; }
+.candle2 { bottom: 70%; left: 55%; font-size: 1.8rem; }
+
+.celebration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+}
+
+.sparkles {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: sparkle 1s ease-in-out infinite;
+}
+
+.celebration p {
+  font-size: 1.5rem;
+  color: #ffe066;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes sparkle {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(90deg) scale(1.1); }
+  50% { transform: rotate(180deg) scale(1.2); }
+  75% { transform: rotate(270deg) scale(1.1); }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .find-tree-title {
+    font-size: 2rem;
+  }
+
+  .christmas-scene {
+    height: 50vh;
+    min-height: 300px;
+  }
+
+  .scene-elements {
+    font-size: 1.5rem;
+  }
+
+  .house { font-size: 2.5rem; }
+  .person { font-size: 2rem; }
+  .decoration, .gift, .animal { font-size: 1.5rem; }
+  .food { font-size: 1.3rem; }
+  .hidden-tree { font-size: 2.5rem; }
+
+  .celebration p {
+    font-size: 1.2rem;
+  }
+}

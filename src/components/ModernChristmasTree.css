@@ -1,0 +1,243 @@
+.tree-outer-wrapper {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) translateY(-0%);
+  z-index: 4;
+  width: 100vw;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+@media (max-width: 600px) {
+  .tree-outer-wrapper {
+    max-width: 98vw;
+    width: 98vw;
+    transform: translateX(-50%) translateY(10%);
+  }
+}
+.snow-hill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  z-index: 3;
+  pointer-events: none;
+  max-height: 100vh;
+  object-fit: cover;
+  user-select: none;
+  display: block;
+}
+
+:root {
+  --yellow: #FFD11B;
+  --pink: #ED3591;
+  --blue: #35D4F9;
+  --orange: #FF8000;
+}
+
+
+.modern-christmas-tree {
+  width: 90vw;
+  max-width: 800px;
+  height: auto;
+  aspect-ratio: 1/1;
+  display: block;
+  pointer-events: auto;
+  cursor: pointer;
+}
+.modern-christmas-tree-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #0a183d 0%, #18305a 100%);
+}
+/* Snow animation */
+.snow {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+@media (max-width: 600px) {
+  .modern-christmas-tree-container {
+    padding: 0;
+  }
+  .modern-christmas-tree {
+    width: 98vw;
+    max-width: 98vw;
+    aspect-ratio: 1/1;
+  }
+}
+.snowflake {
+  position: absolute;
+  top: -2em;
+  color: #fff;
+  font-size: 1.2em;
+  opacity: 0.8;
+  animation: snow-fall linear infinite;
+}
+@keyframes snow-fall {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(100vh) translateX(20px);
+    opacity: 0;
+  }
+}
+
+.christmas-tree-orange, .christmas-tree-blue, .christmas-tree-pink, .christmas-tree-yellow {
+  animation-name: christmas-blink;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.christmas-tree-blue {
+  animation-delay: 0.75s;
+}
+.christmas-tree-pink {
+  animation-delay: 1.5s;
+}
+.christmas-tree-yellow {
+  animation-delay: 2.25s;
+}
+
+@keyframes christmas-blink {
+  0% {
+    fill: var(--yellow);
+  }
+  24% {
+    fill: var(--yellow);
+  }
+  25% {
+    fill: var(--pink);
+  }
+  49% {
+    fill: var(--pink);
+  }
+  50% {
+    fill: var(--blue);
+  }
+  74% {
+    fill: var(--blue);
+  }
+  75% {
+    fill: var(--orange);
+  }
+  100% {
+    fill: var(--orange);
+  }
+}
+  
+
+.christmas-tree-star {
+  animation-name: star-rotate;
+  animation-duration: 3s;
+  /* Run once and keep final rotated state */
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+}
+
+/* Message that sits above the tree */
+/* Curved message rendered inside the SVG */
+.tree-text {
+  fill: #ffffff;
+  font-weight: 700;
+  /* Sizes are in SVG units (viewBox width ~190) — increased for visibility */
+  font-size: 12px;
+  pointer-events: none;
+  user-select: none;
+  paint-order: stroke;
+  stroke: rgba(0,0,0,0.45);
+  stroke-width: 0.8;
+}
+
+@media (max-width: 600px) {
+  .tree-text {
+    font-size: 10px;
+  }
+}
+
+/* Fade/hidden state for tree container */
+.tree-outer-wrapper.hidden {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+}
+
+/* Stolen overlay */
+.stolen-overlay {
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  color: #fff;
+  font-size: clamp(20px, 6vw, 40px);
+  font-weight: 800;
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0,0,0,0.45);
+  opacity: 0;
+  transition: top 0.5s ease, opacity 0.5s ease;
+}
+
+.stolen-overlay.visible {
+  top: 0;
+  opacity: 1;
+}
+
+.overlay-message {
+  margin-bottom: 2rem;
+}
+
+.find-tree-btn {
+  background: #FFD11B;
+  color: #000;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: clamp(18px, 4vw, 30px);
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.find-tree-btn:hover {
+  background: #FFC107;
+  transform: scale(1.05);
+}
+
+.find-tree-btn:active {
+  transform: scale(0.95);
+}
+
+@keyframes star-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  
+

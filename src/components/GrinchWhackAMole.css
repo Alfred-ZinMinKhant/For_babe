@@ -1,0 +1,130 @@
+.grinch-game-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  z-index: 10;
+}
+
+.grinch-game-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.grinch-game-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ff6b6b;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.grinch-stats {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.grinch-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 400px;
+  width: 100%;
+}
+
+.grinch-hole {
+  aspect-ratio: 1;
+  background: #2a2a4e;
+  border: 3px solid #4a4a7a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.grinch-hole:hover {
+  background: #3a3a5e;
+  border-color: #6a6a9a;
+}
+
+.grinch-hole.active {
+  background: #4a4a7a;
+  animation: popUp 0.5s ease-out;
+}
+
+.grinch-image {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  animation: bounce 0.5s ease-out;
+}
+
+@keyframes popUp {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+.grinch-game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.grinch-game-over h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff6b6b;
+}
+
+.grinch-game-over p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .grinch-game-header h2 {
+    font-size: 2rem;
+  }
+
+  .grinch-stats {
+    font-size: 1.2rem;
+    gap: 1rem;
+  }
+
+  .grinch-grid {
+    max-width: 300px;
+    gap: 0.5rem;
+  }
+
+  .grinch-image {
+    width: 70%;
+    height: 70%;
+  }
+}

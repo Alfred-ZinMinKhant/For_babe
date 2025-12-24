@@ -1,0 +1,28 @@
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  position: relative;
+  z-index: 1;
+}
+.hero-content {
+  background: rgba(255,255,255,0.85);
+  border-radius: 24px;
+  padding: 2rem 3rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  text-align: center;
+}
+.hero-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 16px rgba(255,0,100,0.12);
+}
+.tagline {
+  font-size: 1.3rem;
+  color: #e91e63;
+  font-family: 'Pacifico', cursive;
+}
