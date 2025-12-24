@@ -9,10 +9,12 @@ import Wishlist from './pages/Wishlist';
 import Secret from './pages/Secret';
 import FinalMessage from './pages/FinalMessage';
 import Timeline from './pages/Timeline';
+import FullScreenToggle from './components/FullScreenToggle';
 // TODO: Add global styles, heart cursor, background animation, music toggle
 
 const App = () => (
   <Router>
+    <FullScreenToggle />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/timeline" element={<Timeline />} />
