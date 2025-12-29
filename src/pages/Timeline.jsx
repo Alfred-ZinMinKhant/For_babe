@@ -4,23 +4,23 @@ import { motion } from 'framer-motion';
 const milestones = [
   {
     title: 'How we met',
-    details: 'We met in a way that felt like fate, and our story began with a simple hello.',
-  },
-  {
-    title: 'Our first date',
-    details: 'Our first date was full of laughter, nerves, and a spark that started it all.',
+    details: "She posted that she was joining my company — I messaged, 'Are you joining Issara? Congratulations.' That small message started everything.",
   },
   {
     title: 'First impressions',
-    details: 'We both had butterflies, but quickly realized how much we enjoyed each other’s company.',
+    details: 'A cute junior from high school joining the IT team — I remember thinking she was so charming and sweet.',
   },
   {
-    title: 'Memorable moments',
-    details: 'From late-night talks to spontaneous adventures, every moment became a cherished memory.',
+    title: 'Memorable moment',
+    details: "Halloween night — she was drunk and acting really cute, and that moved my heart in a way I won\'t forget.",
   },
   {
-    title: 'Funny/chaotic moments',
-    details: 'Remember the time we argued about… 😂 It was chaotic, but it made us stronger!',
+    title: 'Our first date',
+    details: 'I took her out to eat cheesecake and bought her a bouquet of roses — a sweet, simple night I still remember.',
+  },
+  {
+    title: 'Helping move',
+    details: 'Helping her move into her new place felt like we were moving in together — unpacking boxes, laughing, and enjoying each other😛.',
   },
 ];
 
@@ -64,12 +64,13 @@ const Timeline = () => {
                   backfaceVisibility: 'hidden',
                   position: 'absolute',
                   inset: 0,
-                  display: flipped[idx] ? 'none' : 'flex',
+                  display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   fontWeight: 600,
                   fontSize: '1.2rem',
                   color: '#e91e63',
+                  transform: 'rotateY(0deg)'
                 }}
               >
                 {m.title}
@@ -79,13 +80,14 @@ const Timeline = () => {
                   backfaceVisibility: 'hidden',
                   position: 'absolute',
                   inset: 0,
-                  display: flipped[idx] ? 'flex' : 'none',
+                  display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   fontSize: '1rem',
                   color: '#333',
                   padding: '0 1rem',
                   textAlign: 'center',
+                  transform: 'rotateY(180deg)'
                 }}
               >
                 {m.details}

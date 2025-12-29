@@ -1,4 +1,4 @@
-# Happy 1-Month Anniversary Website
+# Happy 2-Month Anniversary Website
 
 A React-based interactive anniversary website with:
 - Home, Our Story, Gallery, Love Notes, Interactive, Wishlist, Secret, and Final Message pages

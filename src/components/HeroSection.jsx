@@ -10,8 +10,8 @@ const HeroSection = () => (
         alt="Couple"
         className="hero-photo"
       />
-      <h1>Happy 1-Month Anniversary</h1>
-      <p className="tagline">One month down, forever to go.</p>
+      <h1>Happy 2-Month Anniversary</h1>
+      <p className="tagline">Two month down, forever to go.</p>
     </div>
   </section>
 );

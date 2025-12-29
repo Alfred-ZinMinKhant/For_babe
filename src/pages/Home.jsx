@@ -11,15 +11,14 @@ import ModernChristmasTree from '../components/ModernChristmasTree';
 
 const Home = () => (
   <div className="home-page">
-        <ModernChristmasTree />
+        {/* <ModernChristmasTree /> */}
 
-    {/* <ParallaxBackground />
-    <AnimatedHearts />
-    <MusicToggle /> */}
-    {/* <AngelaHeartsName /> */}
-    {/* <FadeInWrapper>
-      <HeroSection />
-    </FadeInWrapper> */}
+    {/* <ParallaxBackground /> */}
+    {/* <AnimatedHearts /> */}
+    {/* <MusicToggle /> */}
+    <AngelaHeartsName />
+    {/* <FadeInWrapper> */}
+      {/* <HeroSection /> */}
   </div>
 );
 
